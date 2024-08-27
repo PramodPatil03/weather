@@ -17,7 +17,7 @@ function App() {
     useState({ name: '', main: { feels_like: 0, grnd_level: 0, humidity: 0, pressure: 0, sea_level: 0, temp_max: 0, temp: 0, temp_min: 0 }, weather: [{ description: 'clear sky' }] });
   const [city, setCity] = useState('bangalore');
   const url = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-  const apiKey = "45683c1ceac7301c50c978518d9f1f16";
+  const apiKey = {secrets.API_KEY};
 
   const getWeather = () => {
     axios.get(url + city + '&appid=' + apiKey)
