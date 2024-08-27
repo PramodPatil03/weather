@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.autoClosingBrackets": "always",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.formatOnPaste": true
+}
